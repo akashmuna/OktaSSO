@@ -2,9 +2,16 @@ package com.okta.oka.sso;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class OktaSamlssoApplication {
+public class OktaSamlssoApplication extends SpringBootServletInitializer {
+	
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(OktaSamlssoApplication.class);
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(OktaSamlssoApplication.class, args);
