@@ -6,12 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class OktaSamlssoApplication extends SpringBootServletInitializer {
-	
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(OktaSamlssoApplication.class);
-	}
+public class OktaSamlssoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OktaSamlssoApplication.class, args);
