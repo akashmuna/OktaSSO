@@ -38,7 +38,7 @@ gives the project some valuable command line functionality.
 
 This component package is ready to run as a local development service. Once the
 service starts you may use a local tunnel, such as [`ngrok`](https://ngrok.com/),
-and configure an _External_ Service to connect the components to your Skill
+and configure an _External_ Service to connect the components to your Skill.
 
 ```shell
 npm start
